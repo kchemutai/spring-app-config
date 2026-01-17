@@ -15,7 +15,7 @@ logging:
     
 okta:
   oauth2:
-    issuer: https://integrator-8203873.okta.com/oauth2/default
+    issuer: https://integrator-4078265.okta.com/oauth2/default
     audience: api://default
 spring:
   zipkin:
