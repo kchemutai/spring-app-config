@@ -36,8 +36,11 @@ eureka:
       
 okta:
   oauth2:
-    issuer: https://dev-15585796.okta.com/oauth2/default
-    audience: api://default
+    issuer: ${OKTA_ISSUER_URI}
+    audience: ${OKTA_AUDIENCE}
+    client-id: ${OKTA_CLIENT_ID}
+    client-secret: ${OKTA_CLIENT_SECRET}
+    scopes: ${OKTA_SCOPES}
 # spring:
 #   zipkin:
 #     baseUrl: http://zipkin-svc:9411
