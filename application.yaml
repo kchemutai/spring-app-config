@@ -19,6 +19,6 @@ okta:
     client-id: ${OKTA_CLIENT_ID}
     client-secret: ${OKTA_CLIENT_SECRET}
     scopes: ${OKTA_SCOPES}
-# spring:
-#   zipkin:
-#     baseUrl: http://zipkin-svc:9411
+spring:
+  zipkin:
+    baseUrl: http://zipkin-svc:9411
