@@ -2,6 +2,7 @@ logging:
   level:
     org.hibernate.SQL: ${HIBERNATE_SQL_LOG_LEVEL:INFO}
     org.hibernate.type.descriptor.sql: ${HIBERNATE_BIND_LOG_LEVEL:WARN}
+    org.springframework.web: DEBUG
 
 eureka:
   instance:
