@@ -20,6 +20,14 @@ okta:
     client-id: ${OKTA_CLIENT_ID}
     client-secret: ${OKTA_CLIENT_SECRET}
     scopes: ${OKTA_SCOPES}
-spring:
+# spring:
+#   zipkin:
+#     baseUrl: http://zipkin-svc:9411
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
   zipkin:
-    baseUrl: http://zipkin-svc:9411
+    tracing:
+      endpoint: http://zipkin-svc:9411/api/v2/spans
