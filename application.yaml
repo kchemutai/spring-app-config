@@ -4,22 +4,22 @@ logging:
     org.hibernate.type.descriptor.sql: ${HIBERNATE_BIND_LOG_LEVEL:WARN}
     org.springframework.web: DEBUG
 
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+# eureka:
+#   instance:
+#     prefer-ip-address: true
+#   client:
+#     fetch-registry: true
+#     register-with-eureka: true
+#     service-url:
+#       defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
       
-okta:
-  oauth2:
-    issuer: ${OKTA_ISSUER_URI}
-    audience: ${OKTA_AUDIENCE}
-    client-id: ${OKTA_CLIENT_ID}
-    client-secret: ${OKTA_CLIENT_SECRET}
-    scopes: ${OKTA_SCOPES}
+# okta:
+#   oauth2:
+#     issuer: ${OKTA_ISSUER_URI}
+#     audience: ${OKTA_AUDIENCE}
+#     client-id: ${OKTA_CLIENT_ID}
+#     client-secret: ${OKTA_CLIENT_SECRET}
+#     scopes: ${OKTA_SCOPES}
 # spring:
 #   zipkin:
 #     baseUrl: http://zipkin-svc:9411
